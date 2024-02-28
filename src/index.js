@@ -1,7 +1,5 @@
 import './style.css';
+import main from "./load.js";
 
-const btn = document.querySelectorAll("button");
-const content = document.getElementById("content")
-// btn.classList.add("btn")e
-// content.classList.add("btn")
-console.log(btn)
+const contenDiv = document.getElementById("content")
+contenDiv.appendChild(loadContent())
