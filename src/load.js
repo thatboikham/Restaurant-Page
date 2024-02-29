@@ -16,4 +16,23 @@ function loadContent(){
     return mainDiv;
 }
 
-export default loadContent;
+function loadAboutUs(){
+    const aboutUs = document.createElement("div")
+    const headerDiv = document.createElement("p");
+    const line = document.createElement("div");
+    const aboutContent = document.createElement("div");
+    
+    headerDiv.textContent = "About Us";
+    aboutContent.textDiv = "Welcome to Kfastfood restaurant! Our website is your gateway to a culinary journey, offering a glimpse into our rich history, meticulously crafted menu, and effortless reservation system. Stay updated on promotions and events, explore private dining options, and connect with us for any inquiries. Visit us to experience our passion for flavor, freshness, and hospitality firsthand. We can't wait to welcome you to [Restaurant Name] for an unforgettable dining experience.";
+    
+    aboutUs.appendChild(headerDiv)
+    aboutUs.appendChild(line);
+    aboutUs.appendChild(aboutContent);
+
+    return aboutUs;
+}
+
+export {
+    loadContent,
+    loadAboutUs
+  };

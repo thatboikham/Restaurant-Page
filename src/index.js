@@ -1,5 +1,5 @@
-import './style.css';
-import main from "./load.js";
+
+import {loadContent, loadAboutUs} from './load.js'
 
 const contenDiv = document.getElementById("content")
 console.log(contenDiv)
