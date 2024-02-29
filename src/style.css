@@ -30,3 +30,20 @@ input{
     border: none;
     border-radius: 25px;
 }
+.aboutHeader{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.aboouText{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: orange;
+    text-align: center;
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 2em;
+}

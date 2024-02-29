@@ -10,11 +10,16 @@ const aboutBtn = document.getElementById("about")
 // contenDiv.appendChild(loadContent())
 homeBtn.addEventListener("click", () => {
     contenDiv.innerHTML = "";
+    contenDiv.style.alignItems = "center";
+    contenDiv.style.backgroundImage = 'url("/src/foodcover.jpg")'
+    contenDiv.style.backgroundSize = "cover";
     contenDiv.appendChild(loadContent());
 });
 
 aboutBtn.addEventListener("click", () => {
     contenDiv.innerHTML = "";
+    contenDiv.style.alignItems = "initial";
+    contenDiv.style.background = "#f5f5f5";
     contenDiv.appendChild(loadAboutUs());
 });
 
