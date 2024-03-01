@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.js',
   devtool: 'inline-source-map',
   devServer: {
-    static: './dist',
+    static: './src',
   },
   output: {
     filename: 'bundle.js',
