@@ -36,7 +36,38 @@ function loadAboutUs(){
     return aboutUs;
 }
 
+function loadMenu(){
+    const menuDiv = document.createElement("div");
+    const menuHeader = document.createElement("div");
+    const breakFastDIv = document.createElement("div");
+    const breakFastText = document.createElement("p");
+    const juiceDiv = document.createElement("div")
+    const juiceText = document.createElement("span")
+    const juicePrice = document.createElement("span")
+
+    menuHeader.textContent = "Kfastood Menu";
+    breakFastText.textContent = "Breakfast";
+    juiceText.textContent = "juice";
+    juicePrice.textContent ="$50";
+    
+    menuHeader.classList.add("brake-header");
+    breakFastText.classList.add("brake-text");
+    juiceDiv.classList.add("juice-details")
+    juiceText.classList.add("juice");
+
+    juiceDiv.appendChild(juiceText)
+    juiceDiv.appendChild(juicePrice)
+
+    breakFastDIv.appendChild(breakFastText);
+    breakFastDIv.appendChild(juiceDiv)
+
+    menuDiv.appendChild(menuHeader);
+    menuDiv.appendChild(breakFastDIv);
+
+    return menuDiv;
+}
 export {
     loadContent,
-    loadAboutUs
+    loadAboutUs,
+    loadMenu
   };
