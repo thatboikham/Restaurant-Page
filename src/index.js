@@ -1,4 +1,5 @@
 import './style.css'
+import food from './foodcover.jpg'
 import {loadContent, loadAboutUs, loadMenu} from './load.js'
 
 const contenDiv = document.getElementById("content")
@@ -12,7 +13,7 @@ const menuBtn = document.getElementById("menu")
 homeBtn.addEventListener("click", () => {
     contenDiv.innerHTML = "";
     contenDiv.style.alignItems = "center";
-    contenDiv.style.backgroundImage = 'url("/src/foodcover.jpg")'
+    contenDiv.style.backgroundImage = `url(${food})`;
     contenDiv.style.backgroundSize = "cover";
     contenDiv.appendChild(loadContent());
 });
