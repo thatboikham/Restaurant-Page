@@ -47,3 +47,17 @@ input{
     margin-top: -30px;
     margin-bottom: 2em;
 }
+.brake-header{
+    font-size: 2.8em;
+    padding: 1em;
+}
+.brake-text{
+    font-size: 1.5em;
+    text-align: center;
+}
+.juice::after{
+    content: '';
+    display: inline-block;
+    width: clamp(20rem,15rem,5rem); 
+    border-bottom: 3px dotted black;
+}
