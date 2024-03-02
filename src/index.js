@@ -9,7 +9,7 @@ const menuBtn = document.getElementById("menu")
 
 //event listeners
 // console.log(contenDiv)
-// contenDiv.appendChild(loadContent())
+contenDiv.appendChild(loadContent())
 homeBtn.addEventListener("click", () => {
     contenDiv.innerHTML = "";
     contenDiv.style.alignItems = "center";
